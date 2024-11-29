@@ -70,6 +70,4 @@ public class SortingAlgorithm {
         nums[second] = temp;
     }
 
-
-    //34. Find Position of Element in an infinite Sorted Array
 }
