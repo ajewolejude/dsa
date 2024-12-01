@@ -12,6 +12,8 @@ public class SortingAlgorithm {
      * 6. then you repeat the same step from 2-4
      * */
 
+    private static final Util util = new Util();
+
     public static void main(String[] args) {
 
         int[] nums = {10, 1, 3, 4, 6, 7, 2, 8, 9};
@@ -56,7 +58,7 @@ public class SortingAlgorithm {
         while (i < nums.length){
             int correctPos = nums[i] - 1;
             if(nums[i] != nums[correctPos]){
-                swap(nums, i, correctPos);
+                util.swap(nums, i, correctPos);
             }else {
                 i++;
             }
@@ -64,10 +66,5 @@ public class SortingAlgorithm {
         return nums;
     }
 
-    static void swap(int[] nums, int first, int second){
-        int temp = nums[first];
-        nums[first] = nums[second];
-        nums[second] = temp;
-    }
 
 }
